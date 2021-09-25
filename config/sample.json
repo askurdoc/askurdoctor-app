@@ -1,0 +1,253 @@
+{
+  "influencer": {
+    "enum": {
+      "CELEBRITY": "Celebrity",
+      "CROWD_MAGNET": "Crowd-Magnet",
+      "KNOWN_FACE": "Known-Face",
+      "UPCOMING": "Upcoming",
+      "KICK_STARTER": "Kick-Starter"
+    },
+    "types": [
+      "CELEBRITY",
+      "CROWD_MAGNET",
+      "KNOWN_FACE",
+      "UPCOMING",
+      "KICK_STARTER"
+    ],
+    "details": [
+      {
+        "influencerType": "CELEBRITY",
+        "displayAs": "Celebrity Tier",
+        "description": "Well Know public personality.",
+        "followers": [
+          {
+            "platformId": "YOUTUBE",
+            "min": "5000000",
+            "max": "NO_LIMIT"
+          },
+          {
+            "platformId": "TIKTOK",
+            "min": "5000000",
+            "max": "NO_LIMIT"
+          },
+          {
+            "platformId": "INSTAGRAM",
+            "min": "5000000",
+            "max": "NO_LIMIT"
+          }
+        ]
+      },
+      {
+        "influencerType": "CROWD_MAGNET",
+        "displayAs": "Crowd Magnet Tier",
+        "description": "",
+        "followers": [
+          {
+            "platformId": "YOUTUBE",
+            "min": "1000000",
+            "max": "5000000"
+          },
+          {
+            "platformId": "TIKTOK",
+            "min": "1000000",
+            "max": "5000000"
+          },
+          {
+            "platformId": "INSTAGRAM",
+            "min": "1000000",
+            "max": "5000000"
+          }
+        ]
+      },
+      {
+        "influencerType": "KNOWN_FACE",
+        "displayAs": "Know Face",
+        "description": "",
+        "followers": [
+          {
+            "platformId": "YOUTUBE",
+            "min": "100000",
+            "max": "1000000"
+          },
+          {
+            "platformId": "TIKTOK",
+            "min": "100000",
+            "max": "1000000"
+          },
+          {
+            "platformId": "INSTAGRAM",
+            "min": "100000",
+            "max": "1000000"
+          }
+        ]
+      },
+      {
+        "influencerType": "UPCOMING",
+        "displayAs": "Upcoming tier",
+        "description": "",
+        "followers": [
+          {
+            "platformId": "YOUTUBE",
+            "min": "50000",
+            "max": "100000"
+          },
+          {
+            "platformId": "TIKTOK",
+            "min": "50000",
+            "max": "100000"
+          },
+          {
+            "platformId": "INSTAGRAM",
+            "min": "50000",
+            "max": "100000"
+          }
+        ]
+      },
+      {
+        "influencerType": "KICK_STARTER",
+        "displayAs": "Kick Starter Tier",
+        "description": "",
+        "followers": [
+          {
+            "platformId": "YOUTUBE",
+            "min": "2500",
+            "max": "50000"
+          },
+          {
+            "platformId": "TIKTOK",
+            "min": "2500",
+            "max": "50000"
+          },
+          {
+            "platformId": "INSTAGRAM",
+            "min": "2500",
+            "max": "50000"
+          }
+        ]
+      }
+    ]
+  },
+  "platforms": {
+    "YOUTUBE": {
+      "platformId": "YOUTUBE",
+      "displayAs": "YouTube",
+      "badge": ""
+    },
+    "TIKTOK": {
+      "platformId": "TIKTOK",
+      "displayAs": "TikTok",
+      "badge": ""
+    },
+    "INSTAGRAM": {
+      "platformId": "INSTAGRAM",
+      "displayAs": "Instagram",
+      "badge": ""
+    }
+  },
+  "pricing": {
+    "tiers": ["ELITE", "NORMAL"],
+    "enum": {
+      "PAY_PER_VIEW": "Pay Per View",
+      "PAY_PER_CLICK": "Pay Per Click",
+      "PAY_PER_INFLUENCER": "Pay Per Influencer"
+    },
+    "pricingList": [
+      {
+        "type": "ELITE",
+        "influencerList": ["CELEBRITY", "CROWD_MAGNET"]
+      },
+      {
+        "type": "NORMAL",
+        "influencerList": ["KNOWN_FACE", "UPCOMING", "KICK_STARTER"]
+      }
+    ],
+    "normal": [
+      {
+        "type": "KNOWN_FACE",
+        "displayAs": "Known-Face",
+        "payoutDetails": {
+          "PAY_PER_VIEW": {
+            "type": "PAY_PER_VIEW",
+            "displayAs": "Pay Per View",
+            "min": 1000,
+            "max": 10000
+          },
+          "PAY_PER_CLICK": {
+            "type": "PAY_PER_CLICK",
+            "displayAs": "Pay Per Click",
+            "min": 2000,
+            "max": 25000
+          },
+          "PAY_PER_INFLUENCER": {
+            "type": "PAY_PER_INFLUENCER",
+            "displayAs": "Pay Per Influencer",
+            "min": 500000,
+            "max": 5000000
+          }
+        }
+      },
+      {
+        "type": "UPCOMING",
+        "displayAs": "Upcoming",
+        "payoutDetails": {
+          "PAY_PER_VIEW": {
+            "type": "PAY_PER_VIEW",
+            "displayAs": "Pay Per View",
+            "min": 500,
+            "max": 5000
+          },
+          "PAY_PER_CLICK": {
+            "type": "PAY_PER_CLICK",
+            "displayAs": "Pay Per Click",
+            "min": 1000,
+            "max": 10000
+          },
+          "PAY_PER_INFLUENCER": {
+            "type": "PAY_PER_INFLUENCER",
+            "displayAs": "Pay Per Influencer",
+            "min": 250000,
+            "max": 2500000
+          }
+        }
+      },
+      {
+        "type": "KICK_STARTER",
+        "displayAs": "Kick-Starter",
+        "payoutDetails": {
+          "PAY_PER_VIEW": {
+            "type": "PAY_PER_VIEW",
+            "displayAs": "Pay Per View",
+            "min": 200,
+            "max": 2000
+          },
+          "PAY_PER_CLICK": {
+            "type": "PAY_PER_CLICK",
+            "displayAs": "Pay Per Click",
+            "min": 500,
+            "max": 5000
+          },
+          "PAY_PER_INFLUENCER": {
+            "type": "PAY_PER_INFLUENCER",
+            "displayAs": "Pay Per Influencer",
+            "min": 100000,
+            "max": 1000000
+          }
+        }
+      }
+    ]
+  },
+  "commission": {
+    "value": 15,
+    "metric": "PERCENT"
+  },
+  "requirements": [
+    {
+      "detail": "Show the product detail for 10 sec",
+      "requirementCode": "REQ01"
+    },
+    {
+      "detail": "Describe the Product name clearly",
+      "requirementCode": "REQ02"
+    }
+  ]
+}

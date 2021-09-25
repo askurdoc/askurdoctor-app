@@ -1,0 +1,65 @@
+.baseColor{
+  background-color: #ffffff;
+}
+
+.DayPicker {
+  color: #fff;
+}
+.DayPicker .bootstrap-datetimepicker-widget table td,
+.DayPicker .bootstrap-datetimepicker-widget table th {
+  padding: 15px 5px;
+  border-radius: 0.75rem;
+}
+.DayPicker .bootstrap-datetimepicker-widget table th {
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+  font-weight: 400;
+  opacity: 0.7;
+  font-size: 14px;
+}
+.DayPicker .bootstrap-datetimepicker-widget table td.active,
+.DayPicker .bootstrap-datetimepicker-widget table td.active:hover,
+.DayPicker .bootstrap-datetimepicker-widget table span,
+.patient-calender .bootstrap-datetimepicker-widget table i {
+  color: #fff;
+}
+.DayPicker
+  .bootstrap-datetimepicker-widget
+  table
+  thead
+  tr:first-child
+  th {
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 1;
+}
+.DayPicker .bootstrap-datetimepicker-widget table .btn-primary {
+  border: 0;
+  padding: 10px;
+}
+.DayPicker .bootstrap-datetimepicker-widget table .btn-primary,
+.DayPicker .bootstrap-datetimepicker-widget table td span.active,
+.DayPicker .bootstrap-datetimepicker-widget table td i.active,
+.DayPicker
+  .bootstrap-datetimepicker-widget
+  table
+  thead
+  tr:first-child
+  th:hover,
+.DayPicker .bootstrap-datetimepicker-widget table td span:hover,
+.DayPicker .bootstrap-datetimepicker-widget table td i:hover,
+.DayPicker .bootstrap-datetimepicker-widget table td.day:hover,
+.DayPicker .bootstrap-datetimepicker-widget table td.hour:hover,
+.DayPicker .bootstrap-datetimepicker-widget table td.minute:hover,
+.DayPicker .bootstrap-datetimepicker-widget table td.second:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.DayPicker .datepicker table tr td.active,
+.DayPicker .datepicker table tr td.today {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.DayPicker-Weekday {
+  color: #fff;
+}

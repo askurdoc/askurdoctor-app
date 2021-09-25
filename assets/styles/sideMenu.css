@@ -1,0 +1,26 @@
+.deznav {
+  width: 21.563rem;
+  padding-bottom: 0;
+  height: calc(100% - 120px);
+  position: absolute;
+  top: 7.5rem;
+  padding-top: 0;
+  z-index: 4;
+  background-color: white;
+ /* box-shadow: 0px 0px 10px rgba(120, 130, 140, 0.13); */
+  transition: all 0.2s ease;
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.02);
+}
+
+.deznav .metismenu > li {
+  padding: 0 30px;
+}
+
+.deznav .metismenu > li > a {
+  font-size: 16px;
+  padding: 20px 20px;
+  border-radius: 0.75rem;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}

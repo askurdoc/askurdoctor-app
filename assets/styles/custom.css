@@ -1,0 +1,355 @@
+.mt-100 {
+  margin-top: 4rem;
+}
+
+.hide {
+  display: none !important;
+}
+
+#main-wrapper{
+  min-height: 800px;
+}
+
+@media print {
+  .no-printme {
+    display: none;
+  }
+  .printme {
+    display: block;
+    width: 100% !important;
+  }
+}
+
+.box .steps ul {
+  overflow: hidden;
+}
+.box .steps ul li {
+  display: inline-block;
+  min-width: 150px;
+  text-align: center;
+}
+.box .steps ul li div {
+  color: #999;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  /* padding-left: 9px; */
+  /* position: relative; */
+  /* background: #f5f5f5; */
+}
+.box .steps ul li div span {
+  font-size: 13px;
+}
+.box .steps ul li:first-child div {
+  width: 135px;
+}
+/* .box .steps ul li div::before {
+    content: " ";
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid #ddd;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 1;
+    margin-left: 1px;
+  }
+  .box .steps ul li div::after {
+    content: " ";
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid #f5f5f5;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+  } */
+.box .steps ul li.done {
+  color: #f73558;
+}
+.box .steps ul li.done div {
+  border-color: #f73558 !important;
+  color: #fff !important;
+  background: #f73558 !important;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin: auto;
+}
+.box .steps ul li.done div::after {
+  border-left: 30px solid #20a8d8;
+}
+.box .steps ul li.active {
+  color: #711685;
+}
+.box .steps ul li.active div {
+  border-color: #711685 !important;
+  color: #fff !important;
+  background: #711685 !important;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  /* padding-left: 9px; */
+}
+.box .steps ul li.active div::after {
+  border-left: 30px solid #167495;
+}
+
+.box .step-component {
+  padding: 20px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box .btn-component {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-content {
+  width: 100%;
+}
+
+.DayPicker-Day {
+  border-radius: 0 !important;
+}
+
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+  background-color: #711685 !important;
+  color: #fff !important;
+}
+
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside):hover {
+  background-color: #711685 !important;
+  color: #fff !important;
+}
+
+.DayPicker:not(.DayPicker--interactionDisabled)
+  .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
+  background-color: #711685 !important;
+  color: #fff !important;
+}
+.DayPicker,
+.DayPicker-Weekday {
+  color: rgb(31, 31, 31) !important;
+  padding: 0.6em;
+}
+
+.DayPicker-Month {
+  margin: 0 !important;
+}
+.DayPicker {
+  width: 100%;
+}
+
+.menu-toggle .deznav {
+  position: fixed;
+}
+.menu-toggle .deznav {
+  width: 5rem;
+  overflow: visible;
+  position: absolute;
+}
+.menu-toggle .deznav .metismenu > li {
+  transition: all 0.4s ease-in-out;
+  padding: 0 13px;
+}
+.menu-toggle .deznav .metismenu li {
+  position: relative;
+}
+
+.deznav .metismenu > li {
+  padding: 0 30px;
+}
+.deznav .metismenu li {
+  position: relative;
+}
+.deznav .metismenu > li {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-toggle .deznav .metismenu li a {
+  padding: 0.8125rem 0.9375rem;
+}
+.menu-toggle .deznav .nav-text {
+  display: none;
+}
+.menu-toggle .nav-header {
+  width: 5rem;
+  z-index: 999;
+}
+.menu-toggle .nav-header .brand-logo {
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: center;
+}
+.menu-toggle .nav-header .logo-abbr {
+  display: block;
+}
+.nav-header .logo-compact {
+  display: none;
+}
+.menu-toggle .brand-title {
+  display: none;
+}
+
+.nav-header .logo-abbr {
+  display: none;
+}
+.menu-toggle .header {
+  padding-left: 5rem;
+  width: 100%;
+}
+
+.menu-toggle .content-body {
+  margin-left: 5rem;
+}
+.fixedHt{
+  max-height: 400px;
+    overflow-y: auto;
+}
+@media only screen and (max-width: 575px) {
+  .menu-toggle .deznav {
+    left: -5rem;
+    position: absolute;
+    z-index: 10;
+  }
+  .nav-header .logo-abbr {
+    max-width: 35px;
+    display: block;
+  }
+  .deznav {
+    left: 0;
+
+    position: absolute;
+    z-index: 10;
+  }
+  .menu-toggle .content-body {
+    margin-left: 0px;
+  }
+  .content-body .container-fluid {
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .best-doctor .timeline .timeline-panel .media {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-right: 15px !important;
+  }
+  .best-doctor .timeline .timeline-panel {
+    display: inline-flex;
+    width: 100%;
+  }
+  .accordion__header-alphabet {
+    font-size: 16px !important;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .content-body {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .deznav {
+    left: 0;
+    top: 5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .deznav {
+    width: 18rem;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .deznav {
+    background-color: #fff;
+    top: 5rem;
+    height: calc(100% - 80px);
+  }
+}
+
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.cbtn {
+  background-color: indigo;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.hover{
+  cursor: pointer;
+}
+
+.imageholder{
+  width: 90px !important;
+  height: 90px !important;
+  object-fit: cover;
+}
+
+.overlay{
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.modal{
+  display: block !important;
+  overflow: none;
+}
+
+.disclaimerBox{
+  background-color: #efefef;
+  padding: 10px;
+  width: auto;
+  height: 350px;
+  overflow: auto;
+  z-index: 1;
+}
+
+.olList{
+  padding: 10px;
+  text-align: left;
+}
+
+.olList li{
+  list-style: decimal;
+}

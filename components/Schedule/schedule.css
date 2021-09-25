@@ -1,0 +1,13 @@
+.slot{
+  width: 150px;
+  background-color: rgb(234, 234, 234);
+  border: 1px solid rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  color: rgb(150, 150, 150);
+}
+
+.slot.bg-warning{
+  text-align: #000 !important;
+}

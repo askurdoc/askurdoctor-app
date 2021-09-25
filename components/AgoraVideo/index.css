@@ -1,0 +1,39 @@
+.content-body{
+
+}
+.container-fluid{
+    height: inherit
+}
+.cam{
+    padding: 0px !important;
+    min-height: 550px;
+}
+.videoplayer{
+    
+}
+.remote_video_{
+    min-height: 500px;
+    background-color: #000;
+    position: absolute;
+}
+.local_stream{
+    width: 200px;
+    min-height: 150px;
+    position: absolute;
+    z-index: 10;
+    bottom: 8vh;
+    right: 3vw;
+    border: 1px solid #fff;
+}
+
+.leaveArea{
+    position: absolute;
+    bottom: 8vh;
+    z-index: 10;
+}
+
+/* #remote_video_ div{
+    float: left;
+    width: 50% !important;
+    height: 100% !important;
+} */
