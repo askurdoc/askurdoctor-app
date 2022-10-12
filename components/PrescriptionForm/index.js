@@ -48,8 +48,16 @@ export default function appointment(props) {
       }
     });
     payload.times = payload.phase.length;
+    const tValue = data.days * (data.quantity * payload.phase.length)
+    payload.totalValue = tValue;
+    if(formFactor === 'Tablet'){
+      payload.counters = `${tValue} tablet(s)`
+    } else if(formFactor === 'Spoon' || formFactor === 'Drops' || formFactor === 'ml'){
+      payload.counters = `1 Bottle`
+    } else if(formFactor === 'Injection'){
+      payload.counters = `${tValue} Injection`
+    }
 
-    payload.totalValue = data.days * (data.quantity * payload.phase.length);
     if (!state) {
       Notiflix.Notify.warning('Please select the atleast a "time of the day"');
       return false;
@@ -130,6 +138,9 @@ export default function appointment(props) {
             </label>
             <label className="radio-inline mr-3">
               <input type="radio" name="optradio" value="Spoon" /> Spoon
+            </label>
+            <label className="radio-inline mr-3">
+              <input type="radio" name="optradio" value="Drops" /> Drops
             </label>
             <label className="radio-inline mr-3">
               <input type="radio" name="optradio" value="ml" /> ml

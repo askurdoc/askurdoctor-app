@@ -154,7 +154,7 @@ export default function AddPatients(props) {
                       <div className="row mb-2">
                         <div className="col-sm-3 col-5">
                           <h5 className="f-w-500">
-                            Medical History <span className="pull-right">:</span>
+                            Medical Conditions <span className="pull-right">:</span>
                           </h5>
                         </div>
                         <div className="col-sm-9 col-7">

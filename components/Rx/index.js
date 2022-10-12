@@ -25,7 +25,7 @@ export default function rx(props) {
               <div className="col-lg-12 text-muted">{item.meal} Meal</div>
             </div>
           </td>
-          <td className="text-right"> {item.totalValue}</td>
+          <td className="text-right"> {item.counters || item.totalValue}</td>
         </tr>
       );
     });
